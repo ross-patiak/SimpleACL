@@ -8,7 +8,7 @@ def main():
         operation = sys.argv[1]
         usergroup = sys.argv[2]
         objectgroup = None
-    elif(len(sys.argv == 4)):
+    elif(len(sys.argv) == 4):
         operation = sys.argv[1]
         usergroup = sys.argv[2]
         objectgroup = sys.argv[3]
@@ -43,7 +43,7 @@ def main():
 
     # write to table
     permissions.to_csv('./tables/permissions.csv')
-    print('Success! '+usergroup + ' has permission to !' + operation)
+    print('Success! '+usergroup + ' has permission to ' + operation)
 
 
 if __name__=='__main__':

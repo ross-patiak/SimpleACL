@@ -1,4 +1,3 @@
 usergroupname,operation,objectgroupname
-usergroup1,view
-usergroup1,delete,objectgroup2
-usergroup1,view,group1
+usergroup1,delete,objectgroup1
+usergroup1,delete,

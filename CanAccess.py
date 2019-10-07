@@ -74,10 +74,10 @@ def main():
                         continue
                    
     if(can_access):
-        print(user + ' can access this object.')
+        print(user + ' can ' + operation + ' this object.')
         return
     else:
-        print(user + ' cannot access this object.')
+        print(user + ' cannot ' + operation + ' this object.')
         return
 
 
