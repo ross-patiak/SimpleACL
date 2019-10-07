@@ -25,11 +25,11 @@ def main():
     group_table = pd.read_csv('./tables/groups.csv', index_col='groupname')
 
     # tmp is a way to check if a group exists
-    tmp = None
     try:
         tmp = group_table.loc[group]
     except:
-        pass
+        tmp = None
+
 
     # group_users are list of users in group
     try:

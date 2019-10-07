@@ -1,7 +1,6 @@
 import csv, sys
 import pandas as pd
 
-# to do: output all users in a specific group, check if group exists
 
 def main():
     if(len(sys.argv)) != 3:
@@ -14,11 +13,11 @@ def main():
     group_table = pd.read_csv('./tables/objects.csv', index_col='groupname')
 
     # tmp is a way to check if a group exists
-    tmp = None
     try:
         tmp = group_table.loc[group]
     except:
-        pass
+        tmp = None
+
 
     # group_objects are list of objects in group
     try:
